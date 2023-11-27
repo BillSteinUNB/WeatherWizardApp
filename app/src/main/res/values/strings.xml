@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">WeatherWizard</string>
+    <string name="title_activity_launch">LaunchActivity</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+</resources>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background = "@drawable/Background-Main">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weather Wizard"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"/>
+
+    <Button
+        android:id="@+id/buttonLaunch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/guideLine"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="126dp"
+        android:layout_toLeftOf="@+id/guideLine"
+        android:text="Launch" />
+
+    <Button
+        android:id="@+id/buttonSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/guideLine"
+        android:layout_marginLeft="32dp"
+        android:layout_marginBottom="126dp"
+        android:layout_toRightOf="@+id/guideLine"
+        android:text="Settings" />
+
+    <View
+        android:id="@+id/guideLine"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/spaceBottom"/>
+
+    <Space
+        android:id="@+id/spaceBottom"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
