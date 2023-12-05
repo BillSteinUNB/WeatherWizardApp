@@ -13,6 +13,9 @@ import androidx.compose.runtime.SideEffect
 import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalView
+import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.unit.sp
 import androidx.core.view.WindowCompat
 
 private val DarkColorScheme = darkColorScheme(
@@ -36,6 +39,20 @@ private val LightColorScheme = lightColorScheme(
     onSurface = Color(0xFF1C1B1F),
     */
 )
+
+val h4TextStyle = TextStyle(
+    fontWeight = FontWeight.Bold,
+    fontSize = 30.sp,
+    letterSpacing = 0.sp
+)
+
+val h6TextStyle = TextStyle(
+    fontWeight = FontWeight.Normal,
+    fontSize = 20.sp,
+    letterSpacing = 0.15.sp
+)
+
+
 
 @Composable
 fun WeatherWizardTheme(
