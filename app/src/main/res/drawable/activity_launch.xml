@@ -5,6 +5,17 @@
     android:padding="16dp">
 
     <TextView
+        android:id="@+id/weatherTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weather Information"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/launchTextView"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/launchTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Launch Screen"

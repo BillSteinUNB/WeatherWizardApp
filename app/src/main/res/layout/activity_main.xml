@@ -3,37 +3,47 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
-    android:background = "@drawable/Background-Main">
+    android:background = "@drawable/background">
+
 
     <TextView
         android:id="@+id/textViewTitle"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Weather Wizard"
-        android:textSize="24sp"
-        android:textStyle="bold"
+        android:layout_height="58dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"/>
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/weatherfont"
+        android:text="Weather Wizard"
+        android:textSize="30sp"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/buttonLaunch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/guideLine"
-        android:layout_marginRight="32dp"
+        android:layout_marginRight="19dp"
         android:layout_marginBottom="126dp"
         android:layout_toLeftOf="@+id/guideLine"
-        android:text="Launch" />
+        android:background="#80FF0000"
+        android:fontFamily="@font/weatherfont"
+        android:text="Launch"
+        android:textColor="#000000"
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/buttonSettings"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/guideLine"
-        android:layout_marginLeft="32dp"
+        android:layout_marginLeft="19dp"
         android:layout_marginBottom="126dp"
         android:layout_toRightOf="@+id/guideLine"
-        android:text="Settings" />
+        android:background="#80FF0000"
+        android:textSize="20sp"
+        android:fontFamily="@font/weatherfont"
+        android:text="Settings"
+        android:textColor="#000000" />
 
     <View
         android:id="@+id/guideLine"
