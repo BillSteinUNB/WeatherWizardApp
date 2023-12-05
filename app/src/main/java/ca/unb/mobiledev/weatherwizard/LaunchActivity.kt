@@ -24,12 +24,18 @@ import org.json.JSONObject
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.*
+import androidx.compose.foundation.layout.*
+import androidx.compose.material3.*
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.unit.dp
+import androidx.compose.material3.Typography
+import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.unit.sp
 
 
 
-
-
-
+// Use MyTypography in your theme
 
 
 class LaunchActivity : ComponentActivity() {
@@ -102,6 +108,7 @@ class LaunchActivity : ComponentActivity() {
             }
         }
     }
+
 
     @Preview(showBackground = true)
     @Composable
