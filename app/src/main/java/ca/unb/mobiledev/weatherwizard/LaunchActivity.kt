@@ -348,7 +348,7 @@ class LaunchActivity : ComponentActivity() {
                         Text(
                             text = iconTextPairs[selectedBox!!].second,
                             fontSize = 28.sp,
-                            color = Color.White
+                            color = Color.Black
                         )
                     }
                 }
