@@ -282,12 +282,12 @@ class LaunchActivity : ComponentActivity() {
 
             // Boxes at the bottom
             val iconTextPairs = listOf(
-                Pair(R.drawable.wardrobe, "Text1"),
-                Pair(R.drawable.wardrobe, "Text2"),
-                Pair(R.drawable.wardrobe, "Text3"),
-                Pair(R.drawable.wardrobe, "Text4"),
-                Pair(R.drawable.windspeed, windInfo.value), // Wind icon with wind information
-                Pair(R.drawable.wardrobe, "Recommended Wardrobe!")
+                Pair(R.drawable.`search`, "Where would you like to go! "),
+                Pair(R.drawable.water, "There is 0 % chance of Precipitation"),
+                Pair(R.drawable.mist, "The Humidity is 70%"),
+                Pair(R.drawable.compass, "Direction:"),
+                Pair(R.drawable.windspeed,  windInfo.value), // Wind icon with wind information
+                Pair(R.drawable.wardrobe, "It's pretty chilly out, We reccomend a Jacket and Long Pants at the minimum!")
             )
             var selectedBox by remember { mutableStateOf<Int?>(null) }
 
@@ -304,7 +304,7 @@ class LaunchActivity : ComponentActivity() {
                         Box(
                             modifier = Modifier
                                 .size(50.dp)
-                                .background(Color.Blue.copy(alpha = 0.3f))
+                                .background(Color.Blue.copy(alpha = 0.15f))
                                 .clip(RoundedCornerShape(100.dp))
                                 .clickable { selectedBox = if (selectedBox == index) null else index },
                             contentAlignment = Alignment.Center
